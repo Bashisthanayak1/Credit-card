@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./index.css">
+<body>
+    <div class="p-w-parent">
+                <div id="purple-div">
+                    <img id="purple-img" src="./Images/Side Colour.png" alt="">
+                </div>
+                <div id="white-div">
+
+                
+
+
+                     <!-- card frontSide starts -->
+                        <div class="container">
+                            <img class="card-img" src="./Images/Card front.png" alt="" />
+                            <p id="c-number">
+                            <span class="num-span">1234</span> &nbsp; &nbsp;
+                            <span class="num-span">5678</span> &nbsp; &nbsp;
+                            <span class="num-span">6382</span> &nbsp; &nbsp;
+                            <span class="num-span">9274</span>
+                            </p>
+                            <span id="right" >
+                                <span class="month-span" id="ExpM-in-card">00</span><span>/</span><span class="year-span">00</span>
+                             </span>
+                            <span id="left">BASHISTHA NAYAK</span>
+                        </div>
+                    <!-- card frontSide ends -->
+
+                    
+                                    <!-- card backSide starts -->
+                                    <div class="container c2">
+                                        <img  class="card-img" src="./Images/cardBackImg.png" alt="" />
+
+                                        <span id="card-cvc">000</span>
+                                    </div>
+                                    <!-- card backSide ends -->
+                        
+
+
+                                    
+    <form action="" onsubmit="formSubmit(event)">
+ 
+        <div class="Entry-container">
+        
+
+                <div>
+                    <label for="" class="input-indicator">CARDHOLDER NAME</label>
+                    <input type="text" placeholder="e.g Jane Appleseed" id="Name-input" oninput="handleInput(0)">
+                </div>
+               
+                <div class="required-div">
+                    <label for="" class="required" >Cardholder name required</label>
+                </div>
+
+                <div>
+                    <label for="" class="input-indicator">CARD NUMBER</label>
+                    <input type="number" placeholder="e.g.1234 5678 9123 0000" id="Number-input" oninput="checkInput(this);handleInput(1)">
+                </div>
+
+                <div class="required-div">
+                    <label for=""  class="required">Card number required</label>
+                </div>
+
+                <div id="Date-Cvc-pr">
+                        <div class="input-indicator">
+                            EXP. DATE (MM/YY)
+                            <input type="number" placeholder="MM" id="ExpM-input" >
+                            <input type="number" placeholder="YY" id="ExpY-input" >
+                        </div>
+                       &nbsp;  &nbsp;   &nbsp;
+                        <div class="input-indicator">
+                            CVC
+                            <input type="number" placeholder="e.g. 123" id="card-cvc-input" oninput="handleInput(2)">
+                            <label for="" class="required">CVC must be number</label>
+                        </div>
+                </div>
+
+                <div>
+                    <input type="submit" value="Confirm" id="confirm-button">
+                </div>
+
+        </div>
+
+</form>
+
+                </div>
+    </div>
+</body>
+</html>
+
+<script src="./index.js"></script>
